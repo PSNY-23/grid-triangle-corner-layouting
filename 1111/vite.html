@@ -1,0 +1,1676 @@
+<html lang="en-US" dir="ltr" class="dark" data-variant="vite" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vite | Next Generation Frontend Tooling</title>
+    <meta name="description" content="Next Generation Frontend Tooling" />
+    <meta name="generator" content="VitePress v2.0.0-alpha.15" />
+    <link
+      rel="preload stylesheet"
+      href="./styles.css"
+      as="style"
+    />
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style" />
+
+    <script type="module" src="/assets/app.B7h64LpR.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="modulepreload" href="/assets/chunks/theme.CSkp14Wz.js" />
+    <link rel="modulepreload" href="/assets/chunks/framework.DWMUBdZf.js" />
+    <link rel="modulepreload" href="/assets/index.md.CfGRlyYL.lean.js" />
+    <script>
+      localStorage.getItem("banner-dismissed-vite+") === "true" &&
+        document.documentElement.classList.add("banner-dismissed");
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/logo-without-border.svg" />
+    <link rel="alternate" type="application/rss+xml" href="/blog.rss" />
+    <script>
+      (() => {
+        const n = (s, t, _ = !1) => {
+          const e = localStorage.getItem(s);
+          (e ? e !== "false" : _) && document.documentElement.classList.add(t);
+        };
+        ((window.__VITE_BANNER_ID__ = "viteplusannouncement"),
+          n(`vite-docs-banner-${__VITE_BANNER_ID__}`, "banner-dismissed"));
+      })();
+    </script>
+    <link rel="me" href="https://m.webtoo.ls/@vite" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vite" />
+    <meta property="og:image" content="https://vite.dev/og-image.jpg" />
+    <meta property="og:url" content="https://vite.dev" />
+    <meta
+      property="og:description"
+      content="Next Generation Frontend Tooling"
+    />
+    <meta property="og:site_name" content="vitejs" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vite_js" />
+    <meta name="theme-color" content="#646cff" />
+    <script
+      src="https://cdn.usefathom.com/script.js"
+      data-site="CBDFBSLI"
+      data-spa="auto"
+      defer=""
+    ></script>
+    <script id="check-dark-mode">
+      (() => {
+        const e = localStorage.getItem("vitepress-theme-appearance") || "auto",
+          a = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        (!e || e === "auto" ? a : e === "dark") &&
+          document.documentElement.classList.add("dark");
+      })();
+    </script>
+    <script id="check-mac-os">
+      document.documentElement.classList.toggle(
+        "mac",
+        /Mac|iPhone|iPod|iPad/i.test(navigator.platform),
+      );
+    </script>
+    <link rel="canonical" href="https://vite.dev" />
+    <link
+      rel="preload"
+      href="/assets/641_x_629_vite_masthead.CJXD3cz6.riv"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      id="VPAlgoliaPreconnect"
+      rel="preconnect"
+      href="https://7H67QR5P0A-dsn.algolia.net"
+      crossorigin=""
+    />
+    <link rel="prefetch" href="/assets/guide_index.md.Bs2TJ6Gt.js" />
+    <link rel="prefetch" href="/assets/config_index.md.D7xbr_m5.js" />
+    <link rel="prefetch" href="/assets/plugins_index.md.C2HrF4AO.js" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    data-new-gr-c-s-check-loaded="14.1270.0"
+    data-gr-ext-installed=""
+    data-gr-aaa-loaded="14.1270.0"
+    data-gr-aaa-notch-connection-id="1769616686567-0.8347992432064153"
+    cz-shortcut-listen="true"
+  >
+    <div id="app">
+      <div
+        class="marketing-layout"
+        data-theme="dark"
+        data-variant="vite"
+        data-v-2b88a9ff=""
+      >
+        <div style="position: relative" data-v-2b88a9ff="">
+          <div>
+            <div
+              class="wrapper wrapper--ticks grid md:grid-cols-2 w-full border-nickel md:divide-x"
+            >
+              <div
+                class="flex flex-col p-10 justify-between gap-20 items-center md:items-start"
+              >
+                <div
+                  class="flex flex-col gap-5 items-center md:items-start text-center md:text-left"
+                >
+                  <a
+                    class="flex items-center gap-2"
+                    href="https://voidzero.dev"
+                    target="_blank"
+                    ><span
+                      class="text-grey text-xs font-mono uppercase tracking-wide"
+                      >By</span
+                    ><img
+                      src="data:image/svg+xml,%3csvg%20viewBox='0%200%2091%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M27.3271%200C33.439%202.28882e-05%2036.6504%202.56908%2036.6504%207.5C36.6503%2012.4308%2033.4389%2015%2027.3271%2015C21.2156%2014.9999%2018.0245%2012.4307%2018.0244%207.5C18.0244%202.56915%2021.2155%209.15527e-05%2027.3271%200ZM70.0195%200C67.0714%204.22099%2067.0541%2010.7638%2070.0195%2015H68.0264C65.0603%2010.7639%2065.0777%204.22097%2068.0264%200H70.0195ZM88.2852%200C91.2333%204.22098%2091.2505%2010.7638%2088.2852%2015H86.293C89.259%2010.7639%2089.2417%204.22096%2086.293%200H88.2852ZM78.1562%200.0205078C82.2874%200.0206451%2085.6357%203.3695%2085.6357%207.5C85.6357%2011.6305%2082.2868%2014.9794%2078.1562%2014.9795C74.0256%2014.9795%2070.6768%2011.6306%2070.6768%207.5C70.6768%203.36942%2074.0257%200.0205078%2078.1562%200.0205078ZM9.13672%2010.6904L12.9072%200.249023H18.0664L12.3477%2014.751H5.71777L0%200.249023H5.30371L9.13672%2010.6904ZM43.5293%2014.751H38.5566V0.249023H43.5293V14.751ZM55.166%200.249023C60.2005%200.249039%2063.0801%202.52763%2063.0801%207.5C63.08%2012.4722%2060.1798%2014.7509%2055.1455%2014.751H46.0498V0.249023H55.166ZM82.7119%204.3584C82.6014%204.11057%2082.2689%204.06387%2082.0977%204.27441L75.6289%2012.209C75.4742%2012.3996%2075.5485%2012.6852%2075.7764%2012.7764C76.4462%2013.0443%2077.2392%2013.1768%2078.1562%2013.1768C81.5505%2013.1767%2083.2676%2011.3536%2083.2676%207.5C83.2676%206.23413%2083.0814%205.18989%2082.7119%204.3584ZM27.3271%203.56348C24.4475%203.56358%2023.1006%204.80673%2023.1006%207.5C23.1006%2010.1931%2024.4476%2011.4159%2027.3271%2011.416C30.2069%2011.416%2031.5537%2010.2139%2031.5537%207.5C31.5537%204.78593%2030.2069%203.56351%2027.3271%203.56348ZM51.0225%2011.2295H54.4619C56.8234%2011.2294%2057.9834%2010.2138%2057.9834%207.5C57.9834%204.78608%2056.8235%203.77064%2054.4619%203.77051H51.0225V11.2295ZM78.1562%201.84375C74.7425%201.84375%2073.0449%203.66709%2073.0449%207.5C73.0449%208.77074%2073.2294%209.82088%2073.5996%2010.6572C73.7095%2010.9057%2074.0426%2010.9517%2074.2139%2010.7412L80.6719%202.80566C80.8271%202.6151%2080.7518%202.32979%2080.5234%202.23926C79.8557%201.97479%2079.0664%201.84377%2078.1562%201.84375Z'%20fill='white'/%3e%3c/svg%3e"
+                      alt="VoidZero"
+                      class="h-2.5"
+                  /></a>
+                  <h1 class="text-white text-pretty max-w-[25rem]">
+                    The Build Tool for the Web
+                  </h1>
+                  <p class="text-white/70 md:text-lg max-w-[27rem] text-pretty">
+                    Vite is a blazing fast frontend build tool powering the next
+                    generation of web applications.
+                  </p>
+                  <div class="flex items-center gap-5 mt-8">
+                    <a
+                      href="/guide/"
+                      class="button button--primary inline-block w-fit"
+                    >
+                      Get Started </a
+                    ><a
+                      href="https://github.com/vitejs/vite"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="button inline-block w-fit"
+                    >
+                      View on GitHub
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="vp-doc hidden md:block w-full -mb-[16px]"
+                  style="
+                    --vp-code-tab-bg: var(--color-slate);
+                    --vp-code-block-bg: var(--color-slate);
+                    --vp-code-tab-divider: #000;
+                  "
+                  data-v-6f0eaebb=""
+                >
+                  <div class="vp-code-group" data-v-6f0eaebb="">
+                    <div class="tabs" data-v-6f0eaebb="">
+                      <!--[--><!--[--><input
+                        id="tab-44086t-0"
+                        type="radio"
+                        name="code-group-tabs-44086t"
+                        checked=""
+                        data-v-6f0eaebb=""
+                      /><label for="tab-44086t-0" data-v-6f0eaebb="">npm</label
+                      ><!--]--><!--[--><input
+                        id="tab-44086t-1"
+                        type="radio"
+                        name="code-group-tabs-44086t"
+                        data-v-6f0eaebb=""
+                      /><label for="tab-44086t-1" data-v-6f0eaebb="">Yarn</label
+                      ><!--]--><!--[--><input
+                        id="tab-44086t-2"
+                        type="radio"
+                        name="code-group-tabs-44086t"
+                        data-v-6f0eaebb=""
+                      /><label for="tab-44086t-2" data-v-6f0eaebb="">pnpm</label
+                      ><!--]--><!--[--><input
+                        id="tab-44086t-3"
+                        type="radio"
+                        name="code-group-tabs-44086t"
+                        data-v-6f0eaebb=""
+                      /><label for="tab-44086t-3" data-v-6f0eaebb="">Bun</label
+                      ><!--]--><!--[--><input
+                        id="tab-44086t-4"
+                        type="radio"
+                        name="code-group-tabs-44086t"
+                        data-v-6f0eaebb=""
+                      /><label for="tab-44086t-4" data-v-6f0eaebb="">Deno</label
+                      ><!--]--><!--]-->
+                    </div>
+                    <!--[-->
+                    <div class="language-bash active" data-v-6f0eaebb="">
+                      <button class="copy" data-v-6f0eaebb=""></button
+                      ><span class="lang" data-v-6f0eaebb="">bash</span>
+                      <pre
+                        data-v-6f0eaebb=""
+                      ><code data-v-6f0eaebb="">$ npm create vite@latest</code></pre>
+                    </div>
+                    <div class="language-bash" data-v-6f0eaebb="">
+                      <button class="copy" data-v-6f0eaebb=""></button
+                      ><span class="lang" data-v-6f0eaebb="">bash</span>
+                      <pre
+                        data-v-6f0eaebb=""
+                      ><code data-v-6f0eaebb="">$ yarn create vite</code></pre>
+                    </div>
+                    <div class="language-bash" data-v-6f0eaebb="">
+                      <button class="copy" data-v-6f0eaebb=""></button
+                      ><span class="lang" data-v-6f0eaebb="">bash</span>
+                      <pre
+                        data-v-6f0eaebb=""
+                      ><code data-v-6f0eaebb="">$ pnpm create vite</code></pre>
+                    </div>
+                    <div class="language-bash" data-v-6f0eaebb="">
+                      <button class="copy" data-v-6f0eaebb=""></button
+                      ><span class="lang" data-v-6f0eaebb="">bash</span>
+                      <pre
+                        data-v-6f0eaebb=""
+                      ><code data-v-6f0eaebb="">$ bun create vite</code></pre>
+                    </div>
+                    <div class="language-bash" data-v-6f0eaebb="">
+                      <button class="copy" data-v-6f0eaebb=""></button
+                      ><span class="lang" data-v-6f0eaebb="">bash</span>
+                      <pre
+                        data-v-6f0eaebb=""
+                      ><code data-v-6f0eaebb="">$ deno init --npm vite</code></pre>
+                    </div>
+                    <!--]-->
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col sm:min-h-[30rem]">
+                <div
+                  class="relative px-10 pb-10 md:pt-10 h-full flex flex-col justify-center overflow-clip"
+                >
+                  <div class="touch-none select-none">
+                    <canvas width="639" height="627" class="w-full"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[-->
+            <section
+              class="wrapper wrapper--ticks border-t px-10 py-6 md:py-8 flex flex-col justify-center gap-5"
+              data-v-00d99581=""
+            >
+              <h6
+                class="text-center md:text-start text-white"
+                data-v-00d99581=""
+              >
+                Trusted by the world's best software teams
+              </h6>
+            </section>
+            <section class="wrapper wrapper--ticks border-t" data-v-00d99581="">
+              <div
+                class="overflow-hidden py-6 "
+                data-v-00d99581=""
+                style="--v103e3159: 80; --v3938de0f: 120; --v554f9c29: 6"
+                data-v-0e517294=""
+              >
+                <div data-v-0e517294="" class="scroll-container">
+                  <div
+                    data-v-0e517294=""
+                    class="scroll-content"
+                    style="gap: 80px; animation-duration: 18s"
+                  >
+                    <div
+                      data-v-0e517294=""
+                      class="flex items-center"
+                      style="gap: 80px"
+                    >
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/openai.svg"
+                          alt="openai"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/shopify.svg"
+                          alt="shopify"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/stripe.svg"
+                          alt="stripe"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/linear.svg"
+                          alt="linear"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/clickup.svg"
+                          alt="clickup"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/wiz.svg"
+                          alt="wiz"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      data-v-0e517294=""
+                      class="flex items-center"
+                      style="gap: 80px"
+                    >
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/openai.svg"
+                          alt="openai"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/shopify.svg"
+                          alt="shopify"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/stripe.svg"
+                          alt="stripe"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/linear.svg"
+                          alt="linear"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/clickup.svg"
+                          alt="clickup"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                      <div
+                        data-v-0e517294=""
+                        class="logo-container flex-shrink-0 relative flex items-center justify-center has-divider"
+                        style="width: 120px; height: 25px"
+                      >
+                        <img
+                          data-v-0e517294=""
+                          loading="lazy"
+                          src="/trusted-by/wiz.svg"
+                          alt="wiz"
+                          class="max-w-full max-h-full object-contain grayscale"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--]-->
+            <section
+              class="wrapper border-t px-5 sm:px-10 py-14 sm:py-28 flex flex-col justify-center gap-3 text-center items-center"
+            >
+              <h2 class="text-white max-w-2xl text-balance text-center">
+                Redefining developer experience
+              </h2>
+              <p class="max-w-md text-white/70 text-balance sm:text-pretty">
+                Vite makes web development enjoyable again
+              </p>
+            </section>
+            <section
+              class="wrapper wrapper--ticks border-t grid lg:grid-cols-2 divide-x divide-y divide-nickel"
+            >
+              <div class="flex flex-col gap-3 justify-between">
+                <div class="p-5 sm:p-10 flex flex-col gap-3">
+                  <h5 class="text-balance sm:text-pretty text-white">
+                    Instant Server Start
+                  </h5>
+                  <p class="sm:max-w-[28rem] text-pretty">
+                    On demand source file serving over native ESM, with blazing
+                    fast dependency pre-bundling.
+                  </p>
+                </div>
+                <div
+                  class="relative p-10 sm:p-15 flex justify-center bg-[#370a7f]"
+                >
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="/assets/vite-featurepanel-1-background.BHnDg8j4.jpg"
+                    alt=""
+                    inert=""
+                    loading="lazy"
+                  /><img
+                    class="z-1"
+                    src="/assets/vite-featurepanel-1-terminal.CQVUoUSU.svg"
+                    width="493"
+                    height="230"
+                    alt="Terminal"
+                    inert=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 justify-between border-r-0">
+                <div class="p-5 sm:p-10 flex flex-col gap-3">
+                  <h5 class="text-white">Lightning Fast HMR</h5>
+                  <p class="max-w-[26rem] text-pretty">
+                    Instantly reflect changes as you save, no matter how big
+                    your app is.
+                  </p>
+                </div>
+                <div class="flex justify-end">
+                  <img
+                    src="/assets/vite-featurepanel-2-terminal.CjMck4X1.png"
+                    width="1126"
+                    height="734"
+                    class="md:max-w-[80%]"
+                    inert=""
+                    loading="lazy"
+                    alt="lightning fast hot module replacement"
+                  />
+                </div>
+              </div>
+              <div
+                class="p-5 sm:p-10 pb-0 sm:pb-0 flex flex-col gap-3 lg:border-b-0"
+              >
+                <h5 class="text-white">Rich Features Out of the Box</h5>
+                <p class="sm:max-w-[28rem] text-pretty">
+                  TypeScript, JSX, CSS, Workers, Web Assembly... and more with
+                  just a plugin away.
+                </p>
+                <div class="touch-none select-none">
+                  <canvas width="638" height="339" class="w-full"></canvas>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 justify-between border-r-0 border-b-0"
+              >
+                <div class="p-5 sm:p-10 flex flex-col gap-3">
+                  <h5 class="text-white">Optimized Build</h5>
+                  <p class="max-w-[25rem] text-pretty">
+                    Advanced tree-shaking, built-in minification, fine-grained
+                    chunking control powered by Rolldown.
+                  </p>
+                </div>
+                <div
+                  class="relative p-10 sm:p-15 flex justify-center bg-[#370a7f]"
+                >
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="/assets/vite-featurepanel-4-background.Bnx0RZk-.jpg"
+                    alt=""
+                    inert=""
+                    loading="lazy"
+                  /><img
+                    class="z-1"
+                    src="/assets/vite-featurepanel-4-terminal.BRnxuy_J.svg"
+                    width="436"
+                    height="209"
+                    inert=""
+                    loading="lazy"
+                    alt="optimized build"
+                  />
+                </div>
+              </div>
+            </section>
+            <section
+              class="wrapper border-t px-5 sm:px-10 py-14 sm:py-28 flex flex-col justify-center gap-3 text-center items-center"
+            >
+              <h2 class="text-white max-w-2xl text-balance text-center">
+                A shared foundation to build upon
+              </h2>
+              <!---->
+            </section>
+            <section
+              class="wrapper wrapper--ticks border-t grid lg:grid-cols-2 divide-x divide-y divide-nickel"
+            >
+              <div class="p-5 sm:p-10 flex flex-col gap-3">
+                <h5 class="text-balance sm:text-pretty text-white">
+                  Flexible Plugin System
+                </h5>
+                <p class="sm:max-w-[28rem] text-pretty">
+                  Vite plugins extends Rollup's well-designed plugin interface
+                  with a few extra Vite-specific options.
+                </p>
+                <div class="touch-none select-none">
+                  <canvas
+                    width="678"
+                    height="317"
+                    class="w-[calc(100%_+_2.5rem)] mt-5 -mx-5"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 border-r-0 justify-between">
+                <div class="p-5 sm:p-10 flex flex-col gap-3">
+                  <h5 class="text-white">Fully Typed API</h5>
+                  <p class="max-w-[26rem] text-pretty">
+                    Designed to be built on top of.
+                  </p>
+                </div>
+                <div
+                  class="relative p-5 sm:p-10 flex justify-center bg-[#370a7f]"
+                >
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="/assets/vite-featurepanel-4-background.Bnx0RZk-.jpg"
+                    alt=""
+                    inert=""
+                    loading="lazy"
+                  /><img
+                    class="z-1"
+                    src="/assets/vite-typed-api.B7gyuuaS.svg"
+                    width="454"
+                    height="252"
+                    inert=""
+                    loading="lazy"
+                    alt="typed api"
+                  />
+                </div>
+              </div>
+              <div class="p-5 sm:p-10 flex flex-col gap-3 lg:border-b-0">
+                <h5 class="text-white">First class SSR Support</h5>
+                <p class="sm:max-w-[28rem] text-pretty mb-12 sm:mb-16">
+                  It's never been easier to setup custom SSR (Server-Side
+                  Rendering), or build your own SSR framework.
+                </p>
+                <img
+                  src="/assets/vite-ssr-support.C71yCKer.png"
+                  width="1008"
+                  height="466"
+                  alt="SSR Support"
+                  loading="lazy"
+                  class="w-full px-5"
+                />
+              </div>
+              <div class="flex flex-col gap-3 justify-between">
+                <div class="p-5 sm:p-10 flex flex-col gap-3">
+                  <h5 class="text-white">Continuous ecosystem integration</h5>
+                  <p class="max-w-[25rem] text-pretty">
+                    Our CI continuously tests Vite changes against downstream
+                    projects, allowing us to improve Vite with stability and
+                    confidence.
+                  </p>
+                </div>
+                <div class="px-5 sm:px-10 flex justify-center">
+                  <img
+                    src="/assets/vite-ci.rfkpyz0p.svg"
+                    width="476"
+                    height="272"
+                    inert=""
+                    loading="lazy"
+                    alt="continuous ecosystem integration"
+                  />
+                </div>
+              </div>
+            </section>
+            <section
+              class="wrapper border-t px-5 sm:px-10 py-14 sm:py-28 flex flex-col justify-center gap-3 text-center items-center"
+            >
+              <h2 class="text-white max-w-2xl text-balance text-center">
+                Powering your favorite frameworks and tools
+              </h2>
+              <!---->
+            </section>
+            <section
+              class="wrapper wrapper--ticks border-t py-8 sm:py-16 px-5 sm:px-10"
+            >
+              <img
+                src="/assets/vite-frameworks-mobile.DUw9NoVz.png"
+                alt="Frameworks powered by Vite"
+                loading="lazy"
+                class="w-full block sm:hidden"
+              /><img
+                src="/assets/vite-frameworks.BUIm9W5J.png"
+                alt="Frameworks powered by Vite"
+                loading="lazy"
+                class="w-full hidden sm:block"
+              />
+            </section>
+            <div
+              class="wrapper wrapper--ticks border-t pt-14 sm:pt-30 px-5 sm:px-10"
+              data-v-e538e0bd=""
+            >
+              <div
+                class="flex flex-col sm:flex-row justify-between items-center gap-8 sm:gap-20 text-center sm:text-left"
+                data-v-e538e0bd=""
+              >
+                <div class="flex flex-col gap-3" data-v-e538e0bd="">
+                  <h3
+                    class="text-white max-w-xl text-balance"
+                    data-v-e538e0bd=""
+                  >
+                    Loved by the community
+                  </h3>
+                  <p
+                    class="max-w-md text-white/70 text-balance"
+                    data-v-e538e0bd=""
+                  >
+                    Don't take our word for it - listen to what Vite community
+                    members have to say.
+                  </p>
+                </div>
+                <div
+                  class="flex gap-8 sm:gap-12 items-start justify-center sm:justify-start sm:pr-20"
+                  data-v-e538e0bd=""
+                >
+                  <div class="flex flex-col gap-3" data-v-e538e0bd="">
+                    <h2 class="text-white" data-v-e538e0bd="">75k+</h2>
+                    <p
+                      class="text-grey flex items-center gap-2"
+                      data-v-e538e0bd=""
+                    >
+                      <img
+                        src="data:image/svg+xml,%3csvg%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20id='Vector'%20d='M16%202.66699C14.2491%202.66699%2012.5152%203.01187%2010.8976%203.68193C9.2799%204.35199%207.81004%205.33412%206.57193%206.57224C4.07144%209.07272%202.66669%2012.4641%202.66669%2016.0003C2.66669%2021.8937%206.49335%2026.8937%2011.7867%2028.667C12.4534%2028.7737%2012.6667%2028.3603%2012.6667%2028.0003V25.747C8.97335%2026.547%208.18669%2023.9603%208.18669%2023.9603C7.57335%2022.4137%206.70669%2022.0003%206.70669%2022.0003C5.49335%2021.1737%206.80002%2021.2003%206.80002%2021.2003C8.13335%2021.2937%208.84002%2022.5737%208.84002%2022.5737C10%2024.6003%2011.96%2024.0003%2012.72%2023.6803C12.84%2022.8137%2013.1867%2022.227%2013.56%2021.8937C10.6%2021.5603%207.49335%2020.4137%207.49335%2015.3337C7.49335%2013.8537%208.00002%2012.667%208.86669%2011.7203C8.73335%2011.387%208.26669%2010.0003%209.00002%208.20033C9.00002%208.20033%2010.12%207.84033%2012.6667%209.56033C13.72%209.26699%2014.8667%209.12033%2016%209.12033C17.1334%209.12033%2018.28%209.26699%2019.3334%209.56033C21.88%207.84033%2023%208.20033%2023%208.20033C23.7334%2010.0003%2023.2667%2011.387%2023.1334%2011.7203C24%2012.667%2024.5067%2013.8537%2024.5067%2015.3337C24.5067%2020.427%2021.3867%2021.547%2018.4134%2021.8803C18.8934%2022.2937%2019.3334%2023.107%2019.3334%2024.347V28.0003C19.3334%2028.3603%2019.5467%2028.787%2020.2267%2028.667C25.52%2026.8803%2029.3334%2021.8937%2029.3334%2016.0003C29.3334%2014.2494%2028.9885%2012.5156%2028.3184%2010.8979C27.6484%209.2802%2026.6662%207.81035%2025.4281%206.57224C24.19%205.33412%2022.7201%204.35199%2021.1025%203.68193C19.4848%203.01187%2017.751%202.66699%2016%202.66699Z'%20fill='%23F4F3EC'%20fill-opacity='0.5'/%3e%3c/svg%3e"
+                        alt=""
+                        class="size-6"
+                        data-v-e538e0bd=""
+                      />
+                      Github Stars
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-3" data-v-e538e0bd="">
+                    <h2 class="text-white" data-v-e538e0bd="">40m+</h2>
+                    <p class="text-grey" data-v-e538e0bd="">
+                      Weekly NPM downloads
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pt-14 sm:pt-30 h-[50rem] overflow-clip [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]"
+                data-v-e538e0bd=""
+              >
+                <div
+                  class="columns-1 sm:columns-2 lg:columns-3 gap-5"
+                  data-v-e538e0bd=""
+                >
+                  <!--[-->
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-2 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          I'm loving what Vite enables. We've found building
+                          SolidStart that it is less a metaframework but a
+                          system of symbiotic Vite plugins. While built with
+                          SolidJS in mind, they should scale from our simplest
+                          template to opinionated starter. We're building an
+                          ecosystem on Vite.
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://pbs.twimg.com/profile_images/1810837163447308292/8Piov0f6_400x400.jpg"
+                          alt="Ryan Carniato"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >Ryan Carniato</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@RyanCarniato</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-2 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          Vite is basically the united nations of JavaScript at
+                          this point. I'll be there as a representative of
+                          Sveltelandia
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://pbs.twimg.com/profile_images/557940120184041473/bFyXy8Pu_400x400.jpeg"
+                          alt="Rich Harris"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >Rich Harris</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@Rich_Harris</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-2 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          Each and every time I use Vite, I feel a true sense of
+                          pure and unbridled joy.
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://pbs.twimg.com/profile_images/1691627325794725888/voQFcYjY_400x400.jpg"
+                          alt="David East"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >David East</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@_davideast</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-2 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          It's also a great platform to build a framework on
+                          since it provides a pluggable dev environment.
+                        </p>
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          Community is amazing too.
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://pbs.twimg.com/profile_images/754886061872979968/BzaOWhs1_400x400.jpg"
+                          alt="Mark Dalgleish"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >Mark Dalgleish</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@markdalgleish</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-2 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          Every time I suspect I've hit the bounds of what Vite
+                          can do, I end up being wrong.
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://pbs.twimg.com/profile_images/1374778373239681025/Sc9ehtAr_400x400.jpg"
+                          alt="Jason Miller"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >Jason Miller</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@_developit</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-2 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          Vite has been a game changer for the industry.
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://pbs.twimg.com/profile_images/1911613315765133312/HVkULegC_400x400.jpg"
+                          alt="David Cramer"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >David Cramer</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@zeeg</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-2 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          I am so excited to see so many great frameworks
+                          teaming up on top of vite. So many will benefit. ❤️ to
+                          the vite team.
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://pbs.twimg.com/profile_images/3380865881/f73b3687ff39b795db05fcaf35972270_400x400.jpeg"
+                          alt="Dion Almaer"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >Dion Almaer</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@dalmaer</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-2 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          Vite is gonna eat the (JavaScript) world.
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://pbs.twimg.com/profile_images/1910252462126313472/gXgT-jxL_400x400.jpg"
+                          alt="Christoph Nakazawa"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >Christoph Nakazawa</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@cpojer</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="break-inside-avoid mb-5" data-v-e538e0bd="">
+                    <div
+                      class="testimonial-card relative overflow-clip isolate rounded-lg p-6 sm:px-8 sm:py-10 flex flex-col gap-6 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:z-0 before:pointer-events-none before:transition-opacity before:duration-100 before:ease-in-out after:content-[''] after:absolute after:inset-px after:z-[1] after:rounded-lg after:bg-slate after:border after:border-nickel after:transition-[border-color,background] after:duration-100 after:ease-in-out hover:before:opacity-100 hover:after:border-transparent"
+                      data-v-e538e0bd=""
+                    >
+                      <div
+                        class="relative z-0.5 flex flex-col gap-4"
+                        data-v-e538e0bd=""
+                      >
+                        <!--[-->
+                        <p
+                          class="text-white/70 leading-relaxed text-sm sm:text-base"
+                          data-v-e538e0bd=""
+                        >
+                          Wow, wow, wow, wow, wow, wow, Vite is..... Vite is....
+                          Wow 🤤🤯🙏
+                        </p>
+                        <!--]-->
+                      </div>
+                      <div
+                        class="relative z-2 flex items-center gap-5 mt-auto"
+                        data-v-e538e0bd=""
+                      >
+                        <img
+                          src="https://avatars.githubusercontent.com/u/13629190?v=4"
+                          alt="Nikolaj"
+                          class="w-12 h-12 rounded-sm object-cover flex-shrink-0"
+                          loading="lazy"
+                          data-v-e538e0bd=""
+                        />
+                        <div class="flex flex-col" data-v-e538e0bd="">
+                          <span
+                            class="text-grey text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >Nikolaj</span
+                          ><span
+                            class="text-biege text-sm font-mono"
+                            data-v-e538e0bd=""
+                            >@lopugit</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--]-->
+                </div>
+              </div>
+            </div>
+            <!--[-->
+            <div
+              class="wrapper wrapper--ticks border-t py-14 sm:py-30 px-10"
+              data-v-6cb91835=""
+            >
+              <div
+                class="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-20 text-center md:text-left md:pl-15"
+                data-v-6cb91835=""
+              >
+                <div class="flex flex-col gap-3" data-v-6cb91835="">
+                  <h3
+                    class="text-white max-w-xl text-balance"
+                    data-v-6cb91835=""
+                  >
+                    Free &amp; open source
+                  </h3>
+                  <p
+                    class="max-w-lg text-white/70 text-balance"
+                    data-v-6cb91835=""
+                  >
+                    Vite is MIT Licensed and will always be free and open
+                    source. This is made possible by our contributors and these
+                    companies:
+                  </p>
+                  <a
+                    href="https://github.com/sponsors/vitejs"
+                    target="_blank"
+                    class="button w-fit mt-8 mx-auto md:mx-0"
+                    data-v-6cb91835=""
+                    >Become a Sponsor</a
+                  >
+                </div>
+                <a
+                  class="flex gap-8 md:gap-12 items-start justify-center md:justify-start md:pr-25"
+                  href="https://voidzero.dev"
+                  target="_blank"
+                  data-v-6cb91835=""
+                  ><img
+                    src="/assets/vite-by-voidzero.DjB1Yyie.png"
+                    alt="Brought to you by VoidZero"
+                    class="h-44 max-w-full object-contain mt-10 md:mt-0"
+                    data-v-6cb91835=""
+                /></a>
+              </div>
+            </div>
+            <div data-v-6cb91835="" class="wrapper">
+              <div data-v-6cb91835="" class="border-t border-nickel">
+                <div
+                  data-v-6cb91835=""
+                  class="py-5 px-5 sm:px-10 border-b border-nickel"
+                >
+                  <span
+                    data-v-6cb91835=""
+                    class="text-white/70 text-xs font-mono uppercase tracking-wide"
+                    >in partnership with</span
+                  >
+                </div>
+                <div
+                  data-v-6cb91835=""
+                  class="grid [&amp;&gt;*]:border-r [&amp;&gt;*]:border-b [&amp;&gt;*]:border-nickel grid-cols-1 sm:grid-cols-2"
+                >
+                  <a
+                    data-v-6cb91835=""
+                    href="https://bolt.new"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-16"
+                    ><img
+                      data-v-6cb91835=""
+                      src="data:image/svg+xml,%3csvg%20width='395'%20height='171'%20viewBox='0%200%20395%20171'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M186.72%20150.388c-36.103%200-54.471-21.113-54.471-47.504%200-31.247%2024.913-59.5381%2061.016-59.5381%2036.102%200%2054.471%2021.1128%2054.471%2047.5037%200%2031.2474-24.914%2059.5384-61.016%2059.5384Zm1.478-33.57c12.667%200%2020.69-11.401%2020.69-24.0682%200-10.1341-6.545-15.8346-17.101-15.8346-12.668%200-20.691%2011.4009-20.691%2024.0688%200%2010.134%206.545%2015.834%2017.102%2015.834ZM286.192%20147.854h-38.003L279.225%207.03194h38.003L286.192%20147.854Z'%20fill='%23000'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M74.6735%20150.388c-11.612%200-23.0129-4.223-29.5579-13.301l-2.3085%2010.707L.186035%20170.436l4.601135-22.642L35.826%207.03194h38.003L62.8504%2056.647c8.8673-9.7119%2017.1013-13.3011%2027.6577-13.3011%2022.8019%200%2038.0029%2014.9901%2038.0029%2042.4367%200%2028.2914-17.524%2064.6054-53.8375%2064.6054Zm14.5678-56.5826c0%2013.0896-9.2896%2023.0126-21.3239%2023.0126-6.7561%200-12.8788-2.533-16.8902-6.967l5.9116-25.9686c4.4337-4.4336%209.5007-6.9672%2015.4123-6.9672%209.0785%200%2016.8902%206.7561%2016.8902%2016.8902Z'%20fill='%23000'/%3e%3cpath%20d='M356.767%20150.388c-21.958%200-37.581-8.023-37.581-25.758%200-1.478.211-5.067.844-8.023l8.234-37.7916h-16.89l7.39-32.936h16.89l6.122-27.8688L384.321.436035%20379.78%2018.0536l-6.123%2027.8258h20.69l-7.389%2032.936h-20.691l-5.489%2024.9126c-.422%201.901-.633%204.012-.633%204.856%200%204.856%202.955%208.234%209.5%208.234%201.9%200%204.645-.633%205.278-1.055v30.402c-4.011%202.745-11.189%204.223-18.156%204.223Z'%20fill='%23000'/%3e%3c/svg%3e"
+                      alt="Bolt"
+                      class="sponsor-logo object-contain h-13 w-[220px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Bolt</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://nuxtlabs.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-16"
+                    ><img
+                      data-v-6cb91835=""
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='30'%20fill='none'%20viewBox='0%200%2080%2020'%3e%3cpath%20fill='%23141414'%20d='M16.78%2020h11.118a2.021%202.021%200%200%200%201.742-1%201.99%201.99%200%200%200-.001-2L22.172%204.143a2.005%202.005%200%200%200-1.742-1%202.02%202.02%200%200%200-1.742%201l-1.909%203.29L13.046%201a2.006%202.006%200%200%200-1.742-1%202.021%202.021%200%200%200-1.742%201L.27%2017a1.99%201.99%200%200%200%20.735%202.732c.306.175.653.267%201.006.267h6.98c2.765%200%204.804-1.207%206.207-3.563l3.407-5.865%201.825-3.139%205.476%209.429h-7.301l-1.826%203.138Zm-7.903-3.143h-4.87l7.3-12.57%203.643%206.284-2.439%204.201c-.932%201.528-1.99%202.085-3.634%202.085ZM44.306%2019.824V16.98H37.41V4.503h-3.274v15.321h10.17ZM50.419%2020c1.279%200%202.428-.526%202.97-1.336v1.16h3.036V8.794h-3.036v1.094c-.607-.766-1.691-1.27-3.014-1.27-3.187%200-5.117%202.255-5.117%205.69%200%203.437%201.93%205.692%205.16%205.692Zm.477-2.627c-1.605%200-2.667-1.226-2.667-3.064%200-1.86%201.062-3.086%202.667-3.086%201.626%200%202.688%201.225%202.688%203.086%200%201.838-1.062%203.064-2.688%203.064ZM64.999%2020c3.23%200%205.226-2.255%205.226-5.691s-1.995-5.69-5.183-5.69c-1.366%200-2.428.524-3.035%201.334V4h-3.014v15.824h3.014v-1.203c.607.853%201.734%201.379%202.992%201.379Zm-.477-2.627c-1.626%200-2.689-1.226-2.689-3.064%200-1.86%201.063-3.086%202.689-3.086%201.583%200%202.667%201.225%202.667%203.086%200%201.838-1.084%203.064-2.667%203.064ZM75.747%2020c2.558%200%204.25-1.38%204.25-3.48%200-4.99-5.985-2.43-5.985-4.684%200-.7.585-1.073%201.431-1.073.824%200%201.67.504%201.8%201.445h2.624c-.109-2.167-1.887-3.59-4.51-3.59-2.234%200-3.903%201.38-3.903%203.327%200%204.64%205.876%202.43%205.876%204.684%200%20.613-.65%201.072-1.583%201.072-1.128%200-1.887-.613-1.995-1.597H71.15C71.258%2018.489%2073.08%2020%2075.747%2020Z'/%3e%3c/svg%3e"
+                      alt="NuxtLabs"
+                      class="sponsor-logo object-contain h-13 w-[220px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >NuxtLabs</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div data-v-6cb91835="" class="border-t border-nickel">
+                <div
+                  data-v-6cb91835=""
+                  class="py-5 px-5 sm:px-10 border-b border-nickel"
+                >
+                  <span
+                    data-v-6cb91835=""
+                    class="text-white/70 text-xs font-mono uppercase tracking-wide"
+                    >Platinum Sponsors</span
+                  >
+                </div>
+                <div
+                  data-v-6cb91835=""
+                  class="grid [&amp;&gt;*]:border-r [&amp;&gt;*]:border-b [&amp;&gt;*]:border-nickel grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                >
+                  <a
+                    data-v-6cb91835=""
+                    href="https://www.storyblok.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-16"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/storyblok.png"
+                      alt="Storyblok"
+                      class="sponsor-logo object-contain h-13 w-[220px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Storyblok</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://www.coderabbit.ai?utm_source=github&amp;utm_medium=sponsors&amp;utm_campaign=evan_you_2025"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-16"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/coderabbit_.png"
+                      alt="CodeRabbit "
+                      class="sponsor-logo object-contain h-13 w-[220px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >CodeRabbit
+                    </span></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://www.greptile.com/?utm_source=vite&amp;utm_medium=sponsorship&amp;utm_campaign=vite_sponsor_page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-16"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/greptile.png"
+                      alt="Greptile"
+                      class="sponsor-logo object-contain h-13 w-[220px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Greptile</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://railway.com/?utm_medium=sponsor&amp;utm_source=oss&amp;utm_campaign=vite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-16"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/railway.svg"
+                      alt="Railway"
+                      class="sponsor-logo object-contain h-13 w-[220px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Railway</span
+                    ></a
+                  >
+                  <div
+                    data-v-6cb91835=""
+                    class="sponsor-link flex items-center justify-center px-8 py-16"
+                    aria-hidden="true"
+                  ></div>
+                  <div
+                    data-v-6cb91835=""
+                    class="sponsor-link flex items-center justify-center px-8 py-16"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+              <div data-v-6cb91835="" class="border-t border-nickel">
+                <div
+                  data-v-6cb91835=""
+                  class="py-5 px-5 sm:px-10 border-b border-nickel"
+                >
+                  <span
+                    data-v-6cb91835=""
+                    class="text-white/70 text-xs font-mono uppercase tracking-wide"
+                    >Gold Sponsors</span
+                  >
+                </div>
+                <div
+                  data-v-6cb91835=""
+                  class="grid [&amp;&gt;*]:border-r [&amp;&gt;*]:border-b [&amp;&gt;*]:border-nickel grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
+                >
+                  <a
+                    data-v-6cb91835=""
+                    href="https://mux.com?ref=vitejs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-7"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/mux.svg"
+                      alt="Mux"
+                      class="sponsor-logo object-contain h-8 w-[120px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Mux</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://nx.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-7"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/nx.svg"
+                      alt="Nx"
+                      class="sponsor-logo object-contain h-8 w-[120px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Nx</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://transloadit.com/?utm_source=vite&amp;utm_medium=referral&amp;utm_campaign=sponsorship&amp;utm_content=website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-7"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/transloadit.png?v2"
+                      alt="Transloadit"
+                      class="sponsor-logo object-contain h-8 w-[120px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Transloadit</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://handsontable.com/docs/react-data-grid/?utm_source=vite_docs&amp;utm_medium=sponsorship&amp;utm_campaign=library_sponsorship_2024"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-7"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/handsontable.svg"
+                      alt="Handsontable"
+                      class="sponsor-logo object-contain h-8 w-[120px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Handsontable</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://mojam.co/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-7"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/mojam.svg"
+                      alt="Mojam"
+                      class="sponsor-logo object-contain h-8 w-[120px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Mojam</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://www.convex.dev/?utm_source=vite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-7"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/convex.svg?v2"
+                      alt="Convex"
+                      class="sponsor-logo object-contain h-8 w-[120px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Convex</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://www.tonkotsu.ai/?utm_source=vite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-7"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/tonkotsu.png"
+                      alt="Tonkotsu"
+                      class="sponsor-logo object-contain h-8 w-[120px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Tonkotsu</span
+                    ></a
+                  ><a
+                    data-v-6cb91835=""
+                    href="https://catalyst.zoho.com/slate/?utm_source=vite.js&amp;utm_medium=sponsorship&amp;utm_campaign=paid"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sponsor-link flex items-center justify-center px-8 transition-opacity opacity-85 hover:opacity-100 py-7"
+                    ><img
+                      data-v-6cb91835=""
+                      src="https://sponsors.vuejs.org/images/catalyst.svg"
+                      alt="Catalyst"
+                      class="sponsor-logo object-contain h-8 w-[120px]"
+                    /><span data-v-6cb91835="" class="sponsor-name ml-5"
+                      >Catalyst</span
+                    ></a
+                  >
+                  <div
+                    data-v-6cb91835=""
+                    class="sponsor-link flex items-center justify-center px-8 py-7"
+                    aria-hidden="true"
+                  ></div>
+                  <div
+                    data-v-6cb91835=""
+                    class="sponsor-link flex items-center justify-center px-8 py-7"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <!--]-->
+            <section
+              class="wrapper  wrapper--ticks border-t h-16 sm:h-30"
+            ></section>
+            <footer class=" data-theme="dark">
+              <section class="wrapper">
+                <div class="relative w-full">
+                  <img
+                    src="/assets/footer-background.BIgtbvhx.jpg"
+                    alt="Footer background"
+                    inert=""
+                    loading="lazy"
+                    class="absolute inset-0 w-full h-full object-cover z-0"
+                  />
+                  <div
+                    class="relative z-10 w-full sm:w-2xl flex flex-col justify-start items-center gap-5 px-5 sm:px-0 py-10 md:py-30 mx-auto"
+                  >
+                    <h2 class="text-center text-white text-balance">
+                      Start building with Vite
+                    </h2>
+                    <p class="text-white max-w-md text-balance text-center">
+                      Prepare for a development environment that can finally
+                      keep pace with the speed of your mind.
+                    </p>
+                    <a href="/guide/" class="button button--white mt-5"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="px-5 md:px-24 pt-10 md:pt-16 pb-16 md:pb-40 flex flex-col md:flex-row gap-10 md:gap-0 md:justify-between"
+                >
+                  <div class="flex flex-col md:flex-row gap-10 md:gap-20">
+                    <!--[-->
+                    <div>
+                      <p
+                        class="text-grey text-xs font-mono uppercase tracking-wide mb-8"
+                      >
+                        Vite
+                      </p>
+                      <ul class="flex flex-col gap-3">
+                        <!--[-->
+                        <li>
+                          <a href="/guide/" class="text-white text-base"
+                            >Guide</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/config/" class="text-white text-base"
+                            >Config</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/plugins/" class="text-white text-base"
+                            >Plugins</a
+                          >
+                        </li>
+                        <!--]-->
+                      </ul>
+                    </div>
+                    <div>
+                      <p
+                        class="text-grey text-xs font-mono uppercase tracking-wide mb-8"
+                      >
+                        Resources
+                      </p>
+                      <ul class="flex flex-col gap-3">
+                        <!--[-->
+                        <li>
+                          <a href="/team" class="text-white text-base">Team</a>
+                        </li>
+                        <li>
+                          <a href="/blog" class="text-white text-base">Blog</a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/vitejs/vite/releases"
+                            class="text-white text-base"
+                            >Releases</a
+                          >
+                        </li>
+                        <!--]-->
+                      </ul>
+                    </div>
+                    <div>
+                      <p
+                        class="text-grey text-xs font-mono uppercase tracking-wide mb-8"
+                      >
+                        Versions
+                      </p>
+                      <ul class="flex flex-col gap-3">
+                        <!--[-->
+                        <li>
+                          <a
+                            href="https://main.vite.dev"
+                            class="text-white text-base"
+                            >Unreleased Docs</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://v6.vite.dev"
+                            class="text-white text-base"
+                            >Vite 6 Docs</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://v5.vite.dev"
+                            class="text-white text-base"
+                            >Vite 5 Docs</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://v4.vite.dev"
+                            class="text-white text-base"
+                            >Vite 4 Docs</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://v3.vite.dev"
+                            class="text-white text-base"
+                            >Vite 3 Docs</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://v2.vite.dev"
+                            class="text-white text-base"
+                            >Vite 2 Docs</a
+                          >
+                        </li>
+                        <!--]-->
+                      </ul>
+                    </div>
+                    <!--]-->
+                  </div>
+                  <div>
+                    <p
+                      class="text-grey text-xs font-mono uppercase tracking-wide mb-8"
+                    >
+                      Social
+                    </p>
+                    <ul class="flex flex-col gap-3">
+                      <!--[-->
+                      <li>
+                        <a
+                          href="https://github.com/vitejs/vite"
+                          class="text-white text-base flex gap-3 items-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><img
+                            src="data:image/svg+xml,%3csvg%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20id='Vector'%20d='M16%202.66699C14.2491%202.66699%2012.5152%203.01187%2010.8976%203.68193C9.2799%204.35199%207.81004%205.33412%206.57193%206.57224C4.07144%209.07272%202.66669%2012.4641%202.66669%2016.0003C2.66669%2021.8937%206.49335%2026.8937%2011.7867%2028.667C12.4534%2028.7737%2012.6667%2028.3603%2012.6667%2028.0003V25.747C8.97335%2026.547%208.18669%2023.9603%208.18669%2023.9603C7.57335%2022.4137%206.70669%2022.0003%206.70669%2022.0003C5.49335%2021.1737%206.80002%2021.2003%206.80002%2021.2003C8.13335%2021.2937%208.84002%2022.5737%208.84002%2022.5737C10%2024.6003%2011.96%2024.0003%2012.72%2023.6803C12.84%2022.8137%2013.1867%2022.227%2013.56%2021.8937C10.6%2021.5603%207.49335%2020.4137%207.49335%2015.3337C7.49335%2013.8537%208.00002%2012.667%208.86669%2011.7203C8.73335%2011.387%208.26669%2010.0003%209.00002%208.20033C9.00002%208.20033%2010.12%207.84033%2012.6667%209.56033C13.72%209.26699%2014.8667%209.12033%2016%209.12033C17.1334%209.12033%2018.28%209.26699%2019.3334%209.56033C21.88%207.84033%2023%208.20033%2023%208.20033C23.7334%2010.0003%2023.2667%2011.387%2023.1334%2011.7203C24%2012.667%2024.5067%2013.8537%2024.5067%2015.3337C24.5067%2020.427%2021.3867%2021.547%2018.4134%2021.8803C18.8934%2022.2937%2019.3334%2023.107%2019.3334%2024.347V28.0003C19.3334%2028.3603%2019.5467%2028.787%2020.2267%2028.667C25.52%2026.8803%2029.3334%2021.8937%2029.3334%2016.0003C29.3334%2014.2494%2028.9885%2012.5156%2028.3184%2010.8979C27.6484%209.2802%2026.6662%207.81035%2025.4281%206.57224C24.19%205.33412%2022.7201%204.35199%2021.1025%203.68193C19.4848%203.01187%2017.751%202.66699%2016%202.66699Z'%20fill='%23F4F3EC'%20fill-opacity='0.5'/%3e%3c/svg%3e"
+                            alt="GitHub"
+                            class="size-5"
+                          />
+                          GitHub</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://chat.vite.dev"
+                          class="text-white text-base flex gap-3 items-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><img
+                            src="data:image/svg+xml,%3csvg%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_732_7492)'%3e%3cpath%20d='M16.6024%203.86939C15.3709%203.29319%2014.0541%202.87443%2012.6774%202.63599C12.5083%202.94166%2012.3108%203.35281%2012.1746%203.67987C10.7111%203.45979%209.26113%203.45979%207.82459%203.67987C7.68843%203.35281%207.48642%202.94166%207.31583%202.63599C5.93766%202.87443%204.61934%203.29473%203.38781%203.87244C0.903804%207.6261%200.230432%2011.2865%200.567119%2014.895C2.21464%2016.1253%203.81129%2016.8727%205.38099%2017.3617C5.76856%2016.8283%206.11421%2016.2613%206.41199%2015.6637C5.84487%2015.4482%205.30168%2015.1823%204.78844%2014.8736C4.9246%2014.7727%205.05779%2014.6672%205.18646%2014.5587C8.31689%2016.0229%2011.7182%2016.0229%2014.8112%2014.5587C14.9414%2014.6672%2015.0746%2014.7727%2015.2092%2014.8736C14.6945%2015.1838%2014.1498%2015.4498%2013.5827%2015.6653C13.8805%2016.2613%2014.2246%2016.8299%2014.6137%2017.3633C16.1849%2016.8742%2017.783%2016.1268%2019.4306%2014.895C19.8256%2010.7119%2018.7557%207.08505%2016.6024%203.86939ZM6.83847%2012.6758C5.89875%2012.6758%205.1281%2011.7985%205.1281%2010.7302C5.1281%209.66187%205.88229%208.78306%206.83847%208.78306C7.79468%208.78306%208.5653%209.66033%208.54884%2010.7302C8.55033%2011.7985%207.79468%2012.6758%206.83847%2012.6758ZM13.1592%2012.6758C12.2195%2012.6758%2011.4488%2011.7985%2011.4488%2010.7302C11.4488%209.66187%2012.203%208.78306%2013.1592%208.78306C14.1154%208.78306%2014.886%209.66033%2014.8696%2010.7302C14.8696%2011.7985%2014.1154%2012.6758%2013.1592%2012.6758Z'%20fill='%23F4F3EC'%20fill-opacity='0.5'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_732_7492'%3e%3crect%20width='20'%20height='20'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                            alt="Discord"
+                            class="size-5"
+                          />
+                          Discord</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://bsky.app/profile/vite.dev"
+                          class="text-white text-base flex gap-3 items-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><img
+                            src="data:image/svg+xml,%3csvg%20viewBox='0%200%2019%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_1262_28144)'%3e%3cpath%20d='M9.18049%208.26205C8.34893%206.64484%206.0853%203.63151%203.98002%202.14588C1.96348%200.722215%201.19465%200.968545%200.690518%201.19728C0.106823%201.45967%200.000488281%202.35625%200.000488281%202.88257C0.000488281%203.41042%200.289658%207.20482%200.477848%207.83901C1.10132%209.93205%203.31829%2010.6389%205.36084%2010.4125C5.46488%2010.3972%205.57071%2010.3829%205.67832%2010.3696C5.57275%2010.3865%205.46692%2010.4007%205.36084%2010.4125C2.36816%2010.8562%20-0.290212%2011.9463%203.19589%2015.8271C7.03084%2019.7975%208.45144%2014.9757%209.18049%2012.5315C9.90953%2014.9757%2010.7487%2019.6238%2015.0962%2015.8271C18.3605%2012.5315%2015.9928%2010.8562%2013.0001%2010.4125C12.894%2010.4007%2012.7881%2010.3864%2012.6827%2010.3696C12.7898%2010.3829%2012.8956%2010.3972%2013.0001%2010.4125C15.0427%2010.6397%2017.2597%209.93205%2017.8831%207.83901C18.0713%207.20559%2018.3605%203.40966%2018.3605%202.88334C18.3605%202.35549%2018.2542%201.45967%2017.6705%201.19575C17.1663%200.967779%2016.3975%200.72145%2014.381%202.14435C12.2757%203.63227%2010.012%206.64561%209.18049%208.26205Z'%20fill='%23F4F3EC'%20fill-opacity='0.5'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1262_28144'%3e%3crect%20width='18.36'%20height='18.36'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                            alt="Bluesky"
+                            class="size-5"
+                          />
+                          Bluesky</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://x.com/vite_js"
+                          class="text-white text-base flex gap-3 items-center"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><img
+                            src="data:image/svg+xml,%3csvg%20viewBox='0%200%2021%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M1.93662%201.97661C1.99228%202.05417%203.28118%203.88651%204.80085%206.04846C6.32053%208.21041%207.72608%2010.2098%207.92433%2010.4915C8.12256%2010.7732%208.28475%2011.0093%208.28475%2011.0162C8.28475%2011.0232%208.21093%2011.1121%208.12071%2011.2138C8.0305%2011.3155%207.77637%2011.6035%207.55603%2011.8537C7.33566%2012.1039%206.9642%2012.5257%206.73053%2012.7909C6.49688%2013.0562%206.08582%2013.5229%205.81705%2013.8282C5.5483%2014.1335%205.065%2014.6823%204.74306%2015.0479C3.74733%2016.1784%203.60364%2016.3417%202.84567%2017.204C2.44094%2017.6644%202.05283%2018.1046%201.98322%2018.1822C1.91361%2018.2599%201.85665%2018.3315%201.85665%2018.3415C1.85665%2018.3531%202.11087%2018.3596%202.57289%2018.3596H3.28911L4.07653%2017.4633C4.50961%2016.9704%204.93683%2016.4852%205.02589%2016.3851C5.21849%2016.1686%206.68727%2014.4995%206.81072%2014.3567C6.85799%2014.302%206.92665%2014.2242%206.9633%2014.1838C6.99997%2014.1434%207.28894%2013.8155%207.60546%2013.4551C7.92196%2013.0948%208.18963%2012.7912%208.20023%2012.7804C8.21086%2012.7696%208.37841%2012.5792%208.5726%2012.3573C8.76678%2012.1354%208.93166%2011.9538%208.93898%2011.9538C8.94632%2011.9538%209.94381%2013.3644%2011.1557%2015.0884C12.3675%2016.8125%2013.3806%2018.2536%2013.4071%2018.2909L13.4552%2018.3588L15.912%2018.3592C17.9323%2018.3595%2018.3671%2018.3553%2018.3594%2018.3357C18.3512%2018.3148%2017.1741%2016.6379%2014.1543%2012.3451C11.9805%209.2547%2011.6914%208.83942%2011.6997%208.81834C11.7078%208.79785%2012.0039%208.4596%2013.9505%206.24713C14.2844%205.86763%2014.7447%205.34419%2014.9734%205.08396C15.2021%204.82372%2015.433%204.56167%2015.4865%204.50161C15.54%204.44156%2015.8214%204.12218%2016.1118%203.79188C16.4022%203.46158%2016.8958%202.90035%2017.2088%202.5447C17.5218%202.18905%2017.7894%201.88402%2017.8034%201.86682C17.8275%201.83739%2017.7866%201.83557%2017.1015%201.83557H16.374L16.0504%202.20409C15.6198%202.69453%2014.8413%203.57894%2014.6202%203.82886C14.5226%203.93929%2014.4008%204.07807%2014.3495%204.13725C14.2983%204.19643%2014.1972%204.3108%2014.1249%204.39142C14.0526%204.47204%2013.6881%204.88605%2013.315%205.31143C12.9419%205.73682%2012.6316%206.08895%2012.6253%206.09396C12.6191%206.09896%2012.5391%206.18954%2012.4476%206.29525C12.2877%206.48014%2012.1249%206.66522%2011.3782%207.51096C11.0505%207.88221%2011.0336%207.89815%2011.006%207.86403C10.9901%207.84437%2010.0297%206.48%208.87166%204.83211L6.76623%201.83595L4.30084%201.83575L1.83545%201.83557L1.93662%201.97661ZM3.86082%202.95917C3.87934%202.98677%204.33997%203.63174%204.88445%204.39242C5.91711%205.83511%209.97501%2011.5077%2012.5847%2015.1567C13.4186%2016.3227%2014.1111%2017.2871%2014.1236%2017.2997C14.1413%2017.3177%2014.3842%2017.3216%2015.2582%2017.3179L16.3701%2017.3132L13.4603%2013.2459C11.8599%2011.0088%209.5428%207.77002%208.31117%206.04846L6.07185%202.91837L4.94952%202.91367L3.82719%202.90898L3.86082%202.95917Z'%20fill='%23F4F3EC'%20fill-opacity='0.5'/%3e%3c/svg%3e"
+                            alt="X.com"
+                            class="size-5"
+                          />
+                          X.com</a
+                        >
+                      </li>
+                      <!--]-->
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="wrapper wrapper--ticks border-t py-5 px-5 md:px-24 flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-start md:items-center"
+              >
+                <p class="text-sm">
+                  © 2025 VoidZero Inc. and Vite contributors. (e61f0d33)
+                </p>
+                <div class="gap-10 text-sm hidden md:flex"></div>
+              </section>
+            </footer>
+            <!--]-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__VP_HASH_MAP__ = JSON.parse(
+        '{"blog.md":"CaJp6eJT","blog_announcing-vite2.md":"Dj0c2brq","blog_announcing-vite3.md":"CWr1MKtj","blog_announcing-vite4-3.md":"B1hNIKuC","blog_announcing-vite4.md":"BwO5t-M1","blog_announcing-vite5-1.md":"CXy0cD0q","blog_announcing-vite5.md":"CM2OUsry","blog_announcing-vite6.md":"BoeqObuW","blog_announcing-vite7.md":"wL0LP9A8","blog_announcing-vite8-beta.md":"BdkxfOLL","changes_hotupdate-hook.md":"j8BhOdWY","changes_index.md":"B8oRRg5p","changes_per-environment-apis.md":"DyH32Q_t","changes_shared-plugins-during-build.md":"BbMd5h5j","changes_ssr-using-modulerunner.md":"C-jq7qgd","changes_this-environment-in-hooks.md":"993oeHLL","config_build-options.md":"CQ5XwU2N","config_dep-optimization-options.md":"DHyQvfBw","config_index.md":"D7xbr_m5","config_preview-options.md":"CBYNl-bx","config_server-options.md":"B83d3C37","config_shared-options.md":"C5WG46HX","config_ssr-options.md":"CqB-UCnP","config_worker-options.md":"Dgm20qcy","guide_api-environment-frameworks.md":"DajIBMDc","guide_api-environment-instances.md":"DzT-lcaK","guide_api-environment-plugins.md":"cqDR14JW","guide_api-environment-runtimes.md":"AYaabTaI","guide_api-environment.md":"DV2wErlY","guide_api-hmr.md":"PN1Dmupd","guide_api-javascript.md":"cG2krrrX","guide_api-plugin.md":"DGvP4xkd","guide_assets.md":"DjLuPofu","guide_backend-integration.md":"oKiTqD7V","guide_build.md":"BOF3dduP","guide_cli.md":"DHSzycdK","guide_dep-pre-bundling.md":"DRfwassE","guide_env-and-mode.md":"DxqSyuET","guide_features.md":"Dl6c1Bjk","guide_index.md":"Bs2TJ6Gt","guide_migration.md":"Pgmn7lR-","guide_performance.md":"CWAkYdth","guide_philosophy.md":"Ch5TAASz","guide_rolldown.md":"CitSM_9k","guide_ssr.md":"jOcFpIPz","guide_static-deploy.md":"CUegrcwX","guide_troubleshooting.md":"CxvD4wS-","guide_using-plugins.md":"DYsUZ4Uc","guide_why.md":"F5aXNAty","index.md":"CfGRlyYL","plugins_index.md":"C2HrF4AO","releases.md":"D8gKh6hA","team.md":"DWyFEe9C"}',
+      );
+      window.__VP_SITE_DATA__ = JSON.parse(
+        '{"lang":"en-US","dir":"ltr","title":"Vite","description":"Next Generation Frontend Tooling","base":"/","head":[],"router":{"prefetchLinks":true},"appearance":true,"themeConfig":{"variant":"vite","logo":"/logo.svg","banner":{"id":"vite+","text":"Announcing Vite+ | The Unified Toolchain for the Web","url":"https://voidzero.dev/posts/announcing-vite-plus?utm_source=vite&utm_content=top_banner"},"editLink":{"pattern":"https://github.com/vitejs/vite/edit/main/docs/:path","text":"Suggest changes to this page"},"socialLinks":[{"icon":"bluesky","link":"https://bsky.app/profile/vite.dev"},{"icon":"mastodon","link":"https://elk.zone/m.webtoo.ls/@vite"},{"icon":"x","link":"https://x.com/vite_js"},{"icon":"discord","link":"https://chat.vite.dev"},{"icon":"github","link":"https://github.com/vitejs/vite"}],"algolia":{"appId":"7H67QR5P0A","apiKey":"208bb9c14574939326032b937431014b","indexName":"vitejs","searchParameters":{"facetFilters":["tags:en"]},"insights":true},"carbonAds":{"code":"CEBIEK3N","placement":"vitejsdev"},"footer":{"copyright":"© 2025 VoidZero Inc. and Vite contributors. (e61f0d33)","nav":[{"title":"Vite","items":[{"text":"Guide","link":"/guide/"},{"text":"Config","link":"/config/"},{"text":"Plugins","link":"/plugins/"}]},{"title":"Resources","items":[{"text":"Team","link":"/team"},{"text":"Blog","link":"/blog"},{"text":"Releases","link":"https://github.com/vitejs/vite/releases"}]},{"title":"Versions","items":[{"text":"Unreleased Docs","link":"https://main.vite.dev"},{"text":"Vite 6 Docs","link":"https://v6.vite.dev"},{"text":"Vite 5 Docs","link":"https://v5.vite.dev"},{"text":"Vite 4 Docs","link":"https://v4.vite.dev"},{"text":"Vite 3 Docs","link":"https://v3.vite.dev"},{"text":"Vite 2 Docs","link":"https://v2.vite.dev"}]}],"social":[{"icon":"github","link":"https://github.com/vitejs/vite"},{"icon":"discord","link":"https://chat.vite.dev"},{"icon":"bluesky","link":"https://bsky.app/profile/vite.dev"},{"icon":"x","link":"https://x.com/vite_js"}]},"nav":[{"text":"Guide","link":"/guide/","activeMatch":"/guide/"},{"text":"Config","link":"/config/","activeMatch":"/config/"},{"text":"Plugins","link":"/plugins/","activeMatch":"/plugins/"},{"text":"Resources","items":[{"text":"Team","link":"/team"},{"text":"Blog","link":"/blog"},{"text":"Releases","link":"/releases"},{"text":"The Documentary","link":"https://www.youtube.com/watch?v=bmWQqAKLgT4"},{"items":[{"text":"Bluesky","link":"https://bsky.app/profile/vite.dev"},{"text":"Mastodon","link":"https://elk.zone/m.webtoo.ls/@vite"},{"text":"X","link":"https://x.com/vite_js"},{"text":"Discord Chat","link":"https://chat.vite.dev"},{"text":"Awesome Vite","link":"https://github.com/vitejs/awesome-vite"},{"text":"ViteConf","link":"https://viteconf.org"},{"text":"DEV Community","link":"https://dev.to/t/vite"}]}]},{"text":"v7.3.1","items":[{"text":"Changelog","link":"https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md"},{"text":"Contributing","link":"https://github.com/vitejs/vite/blob/main/CONTRIBUTING.md"},{"items":[{"text":"Unreleased Docs","link":"https://main.vite.dev"},{"text":"Vite 6 Docs","link":"https://v6.vite.dev"},{"text":"Vite 5 Docs","link":"https://v5.vite.dev"},{"text":"Vite 4 Docs","link":"https://v4.vite.dev"},{"text":"Vite 3 Docs","link":"https://v3.vite.dev"},{"text":"Vite 2 Docs","link":"https://v2.vite.dev"}]}]}],"sidebar":{"/guide/":[{"text":"Introduction","items":[{"text":"Getting Started","link":"/guide/"},{"text":"Philosophy","link":"/guide/philosophy"},{"text":"Why Vite","link":"/guide/why"}]},{"text":"Guide","items":[{"text":"Features","link":"/guide/features"},{"text":"CLI","link":"/guide/cli"},{"text":"Using Plugins","link":"/guide/using-plugins"},{"text":"Dependency Pre-Bundling","link":"/guide/dep-pre-bundling"},{"text":"Static Asset Handling","link":"/guide/assets"},{"text":"Building for Production","link":"/guide/build"},{"text":"Deploying a Static Site","link":"/guide/static-deploy"},{"text":"Env Variables and Modes","link":"/guide/env-and-mode"},{"text":"Server-Side Rendering (SSR)","link":"/guide/ssr"},{"text":"Backend Integration","link":"/guide/backend-integration"},{"text":"Troubleshooting","link":"/guide/troubleshooting"},{"text":"Performance","link":"/guide/performance"},{"text":"Rolldown","link":"/guide/rolldown"},{"text":"Migration from v6","link":"/guide/migration"},{"text":"Breaking Changes","link":"/changes/"}]},{"text":"APIs","items":[{"text":"Plugin API","link":"/guide/api-plugin"},{"text":"HMR API","link":"/guide/api-hmr"},{"text":"JavaScript API","link":"/guide/api-javascript"},{"text":"Config Reference","link":"/config/"}]},{"text":"Environment API","items":[{"text":"Introduction","link":"/guide/api-environment"},{"text":"Environment Instances","link":"/guide/api-environment-instances"},{"text":"Plugins","link":"/guide/api-environment-plugins"},{"text":"Frameworks","link":"/guide/api-environment-frameworks"},{"text":"Runtimes","link":"/guide/api-environment-runtimes"}]}],"/config/":[{"text":"Config","items":[{"text":"Configuring Vite","link":"/config/"},{"text":"Shared Options","link":"/config/shared-options"},{"text":"Server Options","link":"/config/server-options"},{"text":"Build Options","link":"/config/build-options"},{"text":"Preview Options","link":"/config/preview-options"},{"text":"Dep Optimization Options","link":"/config/dep-optimization-options"},{"text":"SSR Options","link":"/config/ssr-options"},{"text":"Worker Options","link":"/config/worker-options"}]}],"/changes/":[{"text":"Breaking Changes","link":"/changes/"},{"text":"Current","items":[]},{"text":"Future","items":[{"text":"this.environment in Hooks","link":"/changes/this-environment-in-hooks"},{"text":"HMR hotUpdate Plugin Hook","link":"/changes/hotupdate-hook"},{"text":"Move to Per-environment APIs","link":"/changes/per-environment-apis"},{"text":"SSR Using ModuleRunner API","link":"/changes/ssr-using-modulerunner"},{"text":"Shared Plugins During Build","link":"/changes/shared-plugins-during-build"}]},{"text":"Past","items":[]}]},"outline":{"level":[2,3]}},"locales":{"root":{"label":"English"},"zh":{"label":"简体中文","link":"https://cn.vite.dev"},"ja":{"label":"日本語","link":"https://ja.vite.dev"},"es":{"label":"Español","link":"https://es.vite.dev"},"pt":{"label":"Português","link":"https://pt.vite.dev"},"ko":{"label":"한국어","link":"https://ko.vite.dev"},"de":{"label":"Deutsch","link":"https://de.vite.dev"},"fa":{"label":"فارسی","link":"https://fa.vite.dev"}},"scrollOffset":134,"cleanUrls":true,"additionalConfig":{}}',
+      );
+    </script>
+  </body>
+</html>

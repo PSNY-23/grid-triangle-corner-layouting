@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before Example</title>
+
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, sans-serif;
+      }
+
+      .title {
+        position: relative;
+        padding-left: 20px; /* space for the dot */
+      }
+
+      .title::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: red;
+        border-radius: 50%;
+
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      /*
+      When using ::before or ::after, always remember the content to align properly.
+       { position: absolute; => Makes content out of normal flow
+       left: 0; => Aligns content to the left
+       top: 50%; => Aligns content at 50% from the top
+       transform: translateY(-50%) => Centers content vertically, it's because when the conntet is 50% from the top, 
+                  it's not centered, as there would be some height of the content itself, of which half should be on the
+                  top and half on the bottom, 
+                  so we use transform to center it.
+                  Transform: translateY(-50%) => means -50% of the content's height and translate it to -Y direction
+    }
+       This block of code is universal, It centers the content of the ::before or ::after element.
+
+      */
+    </style>
+  </head>
+
+  <body>
+    <h2 class="title">Features</h2>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        padding: 0%;
+        margin: 0%;
+        background-color: black;
+        color: white;
+
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        max-width: 1148px;
+        min-height: 100%;
+        margin: auto;
+        position: relative;
+      }
+
+      /* The below container codes are for right and left sideline */
+      .container::before,
+      .container::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        top: 0;
+
+        height: 100%;
+        width: 1px;
+      }
+      .container::before {
+        left: 0;
+      }
+      .container::after {
+        right: 0;
+      }
+
+      section {
+        height: 200px;
+        border-top: 1px solid rgb(38, 38, 38);
+        position: relative;
+      }
+      /* The below section codes are for left and right triangles */
+
+      section::before,
+      section::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        width: 0;
+        height: 0;
+
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+      }
+      section::before {
+        left: 0;
+        border-left: 5px solid gray;
+      }
+      section::after {
+        right: 0;
+        border-right: 5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <div>This is header section</div>
+      </section>
+      <section>
+        <div>This is main section</div>
+      </section>
+      <section>
+        <div>This is footer section</div>
+      </section>
+    </div>
+  </body>
+</html>

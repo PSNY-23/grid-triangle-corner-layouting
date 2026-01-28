@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        html, body {
+          padding: 0%;
+          margin: 0%;
+          background-color: black;
+          color: white;
+
+          height: 100%;
+          width: 100%;
+        }
+        .container {
+          max-width: 1148px;
+          min-height: 100%;
+          margin: auto;
+          position: relative;
+        }
+        .container::before, .container::after {
+          content: '';
+          position: absolute;
+          background-color: rgb(31, 31, 31);
+          top: 0;
+          
+          height: 100%;
+          width: 1px;
+        }
+        .container::before {
+          left: 0;
+        }
+        .container::after {
+          right: 0;
+        }
+
+        section {
+          height: 200px;
+          border-top: 1px solid rgb(38, 38, 38);
+
+          position: relative
+        }
+
+        section::before, section::after {
+          content: "";
+          background-color: gray;
+          height: 5px;
+          width: 5px;
+
+
+          position: absolute;
+          z-index: 10;
+          top:0;
+          transform: translate(-50%, -50%);
+
+        }
+        section::before {
+          left: 0;
+          transform: translate(-50%, -50%);
+        }
+        section::after {
+          right: 0;
+          transform: translate(50%, -50%);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+      <section>
+        <div>This is header section</div>
+      </section>
+      <section>
+        <div>This is main section</div>
+      </section>
+      <section>
+        <div>This is footer section</div>
+      </section>
+    </div>
+</body>
+</html>

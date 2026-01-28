@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      opacity: 0.8;
+    }
+    .box::before {
+      content: "";
+      height: 10px;
+      width: 10px;
+      background-color: greenyellow;
+      position: absolute;
+      top: 0;
+      left: 0; 
+      transform: translate(-50%, -50%);
+    }
+     
+  </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box"></div>
+   </div>
+</body>
+</html>

@@ -5,6 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Layout</title>
     <link rel="stylesheet" href="triangle-style.css" />
+    <style>
+      :root {
+  --bg: #030303;
+  --text: #e5e5e5;
+  --muted: #a3a3a3;
+  --stroke: #262626;
+  --tick: #737373;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+/* PAGE GRID */
+.page {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* FULL HEIGHT VERTICAL LINES */
+.page::before,
+.page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: var(--stroke);
+}
+
+.page::before {
+  left: 0;
+}
+
+.page::after {
+  right: 0;
+}
+
+/* SECTIONS */
+.block {
+  position: relative;
+  padding: 4rem 3rem;
+  border-bottom: 1px solid var(--stroke);
+}
+
+
+
+/* LEFT TRIANGLE */
+.block::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid var(--tick);
+}
+
+/* RIGHT TRIANGLE */
+.block::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 0;
+
+  width: 0;
+  height: 0;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid var(--tick);
+}
+
+    </style>
   </head>
 
   <body>
@@ -17,7 +103,7 @@
         </p>
       </section>
 
-      <!-- <section class="block">
+      <section class="block">
         <h2>Section Two</h2>
         <p>
           The grid lines run through the entire page — very Vite-like.
@@ -29,7 +115,7 @@
         <p>
           Triangles visually pin sections to the grid.
         </p>
-      </section> -->
+      </section>
 
     </main>
   </body>

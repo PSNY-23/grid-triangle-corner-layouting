@@ -1,1 +1,132 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Colors */
+  --paper-base: #e8e6df;
+  --paper-light: #f4f1ea;
+  --paper-raised: #fdfbf7;
+  --paper-dim: #dcdace;
+
+  --ink-primary: #0f3e3c;
+  --ink-secondary: #3a5c5a;
+  --ink-muted: #6b8a88;
+
+  --teal-primary: #1f6e6b;
+  --teal-hover: #175a57;
+  --teal-pressed: #0f3e3c;
+
+  --danger: #c0392b;
+  --success: #27ae60;
+
+  /* Elevation / Shadows */
+  /* Gentle - Level 1 */
+  --shadow-1:
+    1px 1px 2px rgba(15, 62, 60, 0.1), -1px -1px 2px rgba(255, 255, 255, 0.6);
+
+  /* Medium - Level 2 */
+  --shadow-2:
+    3px 3px 6px rgba(15, 62, 60, 0.15), -2px -2px 5px rgba(255, 255, 255, 0.7);
+
+  /* High - Level 3 */
+  --shadow-3:
+    6px 6px 12px rgba(15, 62, 60, 0.15),
+    -4px -4px 10px rgba(255, 255, 255, 0.8),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+
+  /* Inner Shadows (Inset) */
+  --inner-shadow-1:
+    inset 2px 2px 4px rgba(15, 62, 60, 0.1),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.7);
+
+  --inner-shadow-deep:
+    inset 4px 4px 8px rgba(11, 40, 38, 0.25),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.2);
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+}
+
+body {
+  background-color: var(--paper-light);
+  color: var(--ink-primary);
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Texture Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+@layer utilities {
+  .paper-card {
+    background-color: var(--paper-raised);
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .paper-button {
+    background-color: var(--paper-raised);
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .paper-button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-3);
+  }
+
+  .paper-button:active {
+    transform: translateY(1px);
+    box-shadow: var(--inner-shadow-1);
+    background-color: var(--paper-base);
+  }
+
+  .paper-button.primary {
+    background-color: var(--teal-primary);
+    color: var(--paper-raised);
+    box-shadow:
+      3px 3px 6px rgba(31, 110, 107, 0.3),
+      -2px -2px 4px rgba(255, 255, 255, 0.3);
+  }
+
+  .paper-button.primary:hover {
+    background-color: var(--teal-hover);
+  }
+
+  .paper-button.primary:active {
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--teal-pressed);
+  }
+
+  .paper-inset {
+    background-color: var(--paper-base);
+    box-shadow: var(--inner-shadow-1);
+    border-radius: var(--radius-md);
+  }
+
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+

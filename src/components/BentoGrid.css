@@ -1,0 +1,162 @@
+/* BentoGrid.css */
+.bento-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "Inter", sans-serif;
+  color: #e4e4e7;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bento-item:nth-child(3) {
+    grid-column: span 2; /* Make the 3rd item wide on tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-item {
+    grid-column: span 1 !important;
+  }
+}
+
+/* Card Base Styles */
+.bento-card {
+  background: linear-gradient(145deg, #18181b, #09090b);
+  border: 1px solid #27272a;
+  border-radius: 24px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 480px; /* Tall cards */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  group: bento-card; /* Tailwind-like group concept */
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7);
+  border-color: #3f3f46;
+}
+
+/* Bottom Row Spanning */
+.span-2 {
+  grid-column: span 3; /* Wait, if 3 col grid */
+  /* Actually for the 2 bottom cards in a 3 col grid... 
+     We can make a nested grid or just use flexbox for the bottom row if outside the grid.
+     Or use a 6 column grid. 
+     Let's stick to Grid area manipulation or distinct section.
+  */
+}
+
+/* Let's define the grid wrapper differently in JSX to handle the 3-up then 2-up layout 
+   Or just grid-column: span 1.5? (Not possible in standard grid without calc hacks).
+   Better: A 6 column grid.
+   Top row items: span 2.
+   Bottom row items: span 3.
+*/
+.bento-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3;
+}
+
+/* Content Layout */
+.card-visual {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+}
+
+.card-content {
+  margin-top: 24px;
+  z-index: 2;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #a1a1aa;
+  line-height: 1.5;
+}
+
+/* Specific Card Visuals */
+
+/* Card 1: Radar */
+.radar-circle {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Card 3: Editor */
+.editor-ui {
+  width: 80%;
+  height: 200px;
+  background: #111113;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.editor-sidebar {
+  width: 40px;
+  border-right: 1px solid #27272a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  gap: 12px;
+}
+
+.editor-main {
+  flex: 1;
+  padding: 12px;
+  position: relative;
+}
+
+.ui-block {
+  background: #27272a;
+  border-radius: 6px;
+}
